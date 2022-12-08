@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Academy HTML/CSS Assessment</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <form method="post" action="/pets">
+
+    <fieldset>
+      <legend>Elzie's HTML Assessment</legend>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="pet_name">
+      </div>
+
+      <div>
+        <label for="type">Type</label>
+        <select id="type" name="pet_type">
+          <option>Cat</option>
+          <option>Dog</option>
+          <option>Hamster</option>
+          <option>Zebra</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bio">Biography</label>
+        <textarea id="bio" name="pet_bio"></textarea>
+      </div>
+
+      <div>
+        <label for="owner-email">Owner's Email</label>
+        <input type="text" id="owner-email" name="pet_owner_email">
+      </div>
+
+      <div>
+        <button type="submit" id="new-pet-submit-button">Create new pet</button>
+      </div>
+
+      <div>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
+
+  </form>
+</body>
+
+</html>
