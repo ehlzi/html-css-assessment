@@ -1,1 +1,25 @@
-/* Your styles go in here. */
+name {
+
+}
+
+type {
+
+}
+
+bio {
+
+}
+
+owner-email {
+
+}
+
+new-pet-submit-button {
+
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        width: 600px;
+    }
+}
