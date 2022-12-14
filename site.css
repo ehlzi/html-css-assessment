@@ -1,25 +1,88 @@
-name {
-
+form {
+    display: grid;
+    max-width: 600px;
+    background: #ECF0F1;
+    /* top right bottom left */
+    margin: 2rem auto 0 auto;
+    border: 2px solid #c1c1c1;
+    padding: 5rem;
 }
 
-type {
-
+form input {
+    background: #FBFCFC;
 }
 
-bio {
-
+form button {
+    background: #0096FF;
+    border: #f9f9f9;
+    width: 100%;
 }
 
-owner-email {
-
+form button:hover {
+    background: #ECF0F1;
+    border: #7B7D7D;
 }
 
-new-pet-submit-button {
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    width: 100%;
+}
 
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+/* removes border */
+fieldset {
+    border: 0;
+}
+
+/* this spaces out the labels and boxes */
+form div + div {
+    margin-top: 1em;
+}
+
+/*centers the title */
+legend {
+    display: grid;
+    text-align: center;
+}
+
+
+textarea {
+    /*
+    vertical-align: top;
+     */
+    height: 5em;
+}
+
+button {
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 600px) {
+
     form {
-        width: 600px;
+        display: grid;
+        /* fixed width, 200pixels - one fraction of remaining available space */
+        grid-template-columns: 600px;
+
     }
+
+    /* this creates a "block' for the labels and positions them within that space*/
+    label {
+        text-align: right;
+        grid-column: 1 / 2;
+    }
+
+    /* ensures boxes/inputs are same length */
+    input,
+    textarea,
+    select,
+    button {
+        grid-column: 2 / 3;
+    }
+
 }
