@@ -13,7 +13,7 @@ HTML
 
 CSS
 ..* is 600px wide when the screen is greater than or equal to 600px wide
-... uses grid layout to layout labels and form elements when the screen is greater than or equal to 600px wide
+..* uses grid layout to layout labels and form elements when the screen is greater than or equal to 600px wide
 ..* is the width of the screen when the screen is less than 600px wide
 ..* lays out the labels and form elements as full width when the screen is less than 600px wide
 

@@ -1,88 +1,104 @@
-form {
-    display: grid;
-    max-width: 600px;
-    background: #ECF0F1;
-    /* top right bottom left */
-    margin: 2rem auto 0 auto;
-    border: 2px solid #c1c1c1;
-    padding: 5rem;
-}
-
-form input {
-    background: #FBFCFC;
-}
-
-form button {
-    background: #0096FF;
-    border: #f9f9f9;
-    width: 100%;
-}
-
-form button:hover {
-    background: #ECF0F1;
-    border: #7B7D7D;
-}
-
-input,
-textarea,
-select {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-label {
-    padding: 0.5em 0.5em 0.5em 0;
-}
-
-/* removes border */
 fieldset {
     border: 0;
 }
 
-/* this spaces out the labels and boxes */
-form div + div {
-    margin-top: 1em;
-}
-
-/*centers the title */
 legend {
     display: grid;
-    text-align: center;
+    text-align: left;
+
 }
 
+form {
+    margin: 2rem auto 0 auto;
+    width: 600px;
+    padding: 5em;
+    border: 2px solid white;
+    border-radius: 1em;
+    background: black;
+
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+    grid-row: auto;
+    padding: 0.5em 0.5em 0.5em 0;
+
+}
+
+select {
+    font-family: Helvetica, monospace;
+}
 
 textarea {
-    /*
     vertical-align: top;
-     */
     height: 5em;
 }
 
 button {
-    margin: 0 auto;
+    border-radius: .5rem;
+    background: #0096FF;
+    color: white;
+    border: 1px solid white;
+
+
 }
 
-@media screen and (min-width: 600px) {
+button:hover {
+    background: white;
+    border: #7B7D7D;
+    color: black;
+}
+
+body {
+    background-color: rgb(57, 169, 219);
+    font-family: Helvertica, monospace;
+    color: white;
+
+}
+
+input,
+select,
+textarea,
+button {
+    padding: 0.7em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+    width: 425px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid gold;
+}
+
+
+@media screen and (max-width: 600px) {
 
     form {
-        display: grid;
-        /* fixed width, 200pixels - one fraction of remaining available space */
-        grid-template-columns: 600px;
-
+        width: auto;
     }
 
-    /* this creates a "block' for the labels and positions them within that space*/
     label {
-        text-align: right;
-        grid-column: 1 / 2;
+        display: block;
+        margin: 0;
+        text-align: left;
+        width: auto;
     }
 
-    /* ensures boxes/inputs are same length */
     input,
-    textarea,
     select,
-    button {
-        grid-column: 2 / 3;
+    textarea {
+        width: 100%;
     }
 
 }
