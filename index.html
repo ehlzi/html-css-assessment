@@ -2,34 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>App Academy HTML/CSS Assessment</title>
-  <link href="site.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Academy HTML/CSS Assessment</title>
+    <link href="site.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
+
+<h2>ELZIE'S HTML ASSESSMENT - FORMS</h2>
+
+<hr>
 
 <body>
 
-<div class="">
+<img src="https://assets-global.website-files.com/5dcc7f8c449e597ed83356b8/603820afd31232aab368ea6f_New%20Red-logo-emblem.webp" id="logo" alt="LOGO">
 
-  <form method="post" action="/pets">
+<form method="post" action="/pets">
+
+    <h3>
+        Register your pet!
+    </h3>
+
+    <hr>
 
     <fieldset>
 
-      <legend class="legend">Elzie's HTML Assessment</legend>
-
-      <hr>
         <label for="name">Name</label>
         <input type="text" id="name" name="pet_name">
 
         <label for="type">Type</label>
         <select id="type" name="pet_type">
-          <option>Cat</option>
-          <option>Dog</option>
-          <option>Hamster</option>
-          <option>Zebra</option>
-          <option>Other</option>
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Hamster</option>
+            <option>Zebra</option>
+            <option>Other</option>
         </select>
 
         <label for="owner-email">Owner's Email</label>
@@ -38,13 +48,40 @@
         <label class="bio" for="bio">Biography</label>
         <textarea id="bio" name="pet_bio"></textarea>
 
-      <hr>
-        <button type="submit" id="new-pet-submit-button">Create new pet</button>
+        <hr>
+
+        <button type="submit" id="new-pet-submit-button">Create New Pet</button>
         <button type="reset">Reset</button>
 
     </fieldset>
+</form>
 
-  </form>
+<hr>
+
+<div class="card">
+
+    <img src="../images/desert.jpg" alt="Avatar" class="desert">
+
+    <div class="container">
+
+        <div class="columnOne">
+
+            <div class="avatarIcon">
+                <img src="../images/person-avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="info">
+                <h4 class="title">Title goes here</h4>
+                <h6 class="secondary">Secondary text</h6>
+            </div>
+        </div>
+
+        <div class="columnTwo">
+            <p>Greyhound divisively hello coldly wonderfully marginally far upon excluding.</p>
+        </div>
+
+    </div>
+
 </div>
 
 </body>
