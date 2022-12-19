@@ -84,15 +84,33 @@ select:focus {
     outline: 2px solid #0096ff;
 }
 
+.cardPad {
+    margin: 0 auto;
+    background-color: white;
+    width: 364px;
+    height: 352px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
 .card {
-    font-family: "Roboto", sans-serif;
-    width: 344px;
-    height: 332px;
+    font-family: 'Roboto', sans-serif;
     background: white;
     margin: 0 auto;
+    width: 344px;
+    height: 332px;
+    position: relative;
+    top: 10px;
     border-radius: 5px;
-    box-shadow: #94969d50 0 5px 20px;
+    transition: .2s;
+    box-shadow: 0 5px 5px #94969d50;
 }
+
+.card:hover {
+    box-shadow: 0 2px rgba(0, 0, 0, .3);
+    filter: blur(4px);
+}
+
 
 .container {
     position: relative;
@@ -130,16 +148,20 @@ select:focus {
 
 .secondary {
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
     color: #232f34;
+    font-size: 13px;
+    opacity: 85%;
 }
 
 .columnTwo {
-    margin-right: 100px;
+    font-family: 'Roboto Flex', sans-serif;
+    margin-right: 50px;
     position: relative;
-    bottom: 25px;
-    font-size: 11px;
+    bottom: 35px;
     color: #232f34;
+    font-size: 15px;
+    opacity: 85%;
 }
 
 @media screen and (max-width: 600px) {
